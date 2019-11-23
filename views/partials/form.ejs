@@ -1,0 +1,12 @@
+<div class="form-card">
+    <div class="from-container">
+        <h1>Hi!</h1>
+        <% if(error){ %>
+            <span style="position: absolute; color: red;">No Data Found!!</span>
+    <% } %>
+        <form method="POST" action="/get">
+            <input name="name" required=true placeholder="Enter Name..." class="form-control" />
+            <button class="btn btn-danger mt-2 form-control" type="submit">Lets Find</button>
+        </form>
+    </div>
+</div>
