@@ -3,12 +3,12 @@
     <body>
         <div>
         <h3 class="bg-light p-2">Search results</h3>
-            <% for(var i=1; i < data.length; i++) { %>
+            <% for(var i=0; i < data.length; i++) { %>
             <div class="result-card">
                             <div class="card m-2" style="width: 15vw;">
                                 
                                 <div class="card-body">
-                                    <i><h5 class="card-title"><%= data[i].firstname %></h5></i>
+                                    <i><h5 class="card-title" ><%= data[i].firstname %></h5></i>
                                     <p class="card-text">Surname: <%= data[i].surname %></p>
                                     <p class="card-text">Born: <%= data[i].born %></p>
                                     <p class="card-text">Country: <%= data[i].bornCountry %></p>

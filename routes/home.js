@@ -10,6 +10,7 @@ router.post("/get", async (req, res)=>{
     const laureates = await Laureates.find({
         $or: [{"firstname": { "$regex": req.body.name, "$options": "i" }}, {"surname": { "$regex": req.body.name, "$options": "i" }}] 
     })
+    console.log(laureates)
     if(!laureates.length) return res.render("index", {error: true}) 
     res.render("result", {data: laureates})
 })
